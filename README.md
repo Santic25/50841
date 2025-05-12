@@ -34,12 +34,36 @@
 
 ### 🧱 Componentes de la regla
 
-   | Elemento        | Descripción                                                | Ejemplos                           |
-| --------------- | ---------------------------------------------------------- | ---------------------------------- |
-| `<dispositivo>` | Nombre que comienza con letra, seguido de letras o números | `luz`, `sensor1`, `aire`, `tv2`    |
-| `<condición>`   | Tipo de comparación                                        | `es`, `mayor que`, `menor que`     |
-| `<valor>`       | Estado o número usado para comparar                        | `encendido`, `apagado`, `20`       |
-| `<acción>`      | Comando que se ejecuta si se cumple la condición           | `activar`, `desactivar`, `ajustar` |
+🔸 <dispositivo>
+
+Un nombre que comienza con una letra, seguido de letras y/o números.
+Ejemplos: luz, sensor1, tv2, aire
+
+🔸 <condición>
+
+Solo se permiten las siguientes:
+
+    es
+
+    mayor que
+
+    menor que
+
+🔸 <valor>
+
+    Si la condición es 'es', sus valores posibles son: encendido, apagado
+
+    Si la condición es 'mayor que' o 'menor que' se puede ponre cualquier número (como 10, 22, 100)
+
+🔸 <acción>
+
+Debe tener una de las siguientes formas:
+
+    activar <dispositivo>
+
+    desactivar <dispositivo>
+
+    ajustar <dispositivo> a <número>
 
 ### ✅ Ejemplos válidos
 

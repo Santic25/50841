@@ -23,7 +23,38 @@
 >}
 >```
 
-   # ▶️ Ejecutar el analizador usando input.txt
+
+  # Ejecutando el analizador
+
+  Este analizador solo toma cadenas con un formato específico:
+
+  >```bash
+  > cuando <dispositivo> <condición> <valor> entonces <acción> ;
+  >```
+
+### 🧱 Componentes de la regla
+
+   | Elemento        | Descripción                                                | Ejemplos                           |
+| --------------- | ---------------------------------------------------------- | ---------------------------------- |
+| `<dispositivo>` | Nombre que comienza con letra, seguido de letras o números | `luz`, `sensor1`, `aire`, `tv2`    |
+| `<condición>`   | Tipo de comparación                                        | `es`, `mayor que`, `menor que`     |
+| `<valor>`       | Estado o número usado para comparar                        | `encendido`, `apagado`, `20`       |
+| `<acción>`      | Comando que se ejecuta si se cumple la condición           | `activar`, `desactivar`, `ajustar` |
+
+### ✅ Ejemplos válidos
+
+```text
+cuando luz es encendido entonces desactivar luz ;
+```
+```text
+cuando sensor1 mayor que 25 entonces activar ventilador ;
+```
+```text
+cuando aire menor que 18 entonces ajustar calefactor a 22 ;
+```
+
+   
+   ## ▶️ Ejecutar el analizador usando input.txt
 
 1. Editá `input.txt` con la cadena que quieras analizar. Por ejemplo:
 
@@ -75,7 +106,7 @@
 > if (luz.encendido === true) luz.desactivar();text
 > ```
 
-# ▶️ Ejecutar el analizador sin usar input.txt
+## ▶️ Ejecutar el analizador sin usar input.txt
 
 1. Borrá el archivo `input.txt`
 

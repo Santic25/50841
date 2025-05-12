@@ -24,40 +24,42 @@
 >```
 
 
-  # ▶️ Ejecutando el analizador
+# ▶️ Ejecutando el analizador
 
-  Este analizador solo toma cadenas con un formato específico:
+Este analizador solo toma cadenas con un formato específico:
 
-  >```bash
-  > cuando <dispositivo> <condición> <valor> entonces <acción> ;
-  >```
+>```bash
+> cuando <dispositivo> <condición> <valor> entonces <acción> ;
+>```
 
 ### 🧱 Componentes de la regla
 
-🔸 <dispositivo>
+🔸 &lt;dispositivo&gt;
 
 Un nombre que comienza con una letra, seguido de letras y/o números.
 Ejemplos: luz, sensor1, tv2, aire
 
-🔸 <condición>
+🔸 &lt;condición&gt;
 
-Solo se permiten las siguientes:
+Solo se permiten las siguientes condiciones:
 
     es
 
     mayor que
 
     menor que
+    
+🔸 &lt;valor&gt;
 
-🔸 <valor>
+    Si la condición es 'es':
+    Valores posibles: encendido, apagado
 
-    Si la condición es 'es', sus valores posibles son: encendido, apagado
+    Si la condición es 'mayor que' o 'menor que':
+    Valores posibles: cualquier número (como 10, 22, 100)
 
-    Si la condición es 'mayor que' o 'menor que' se puede ponre cualquier número (como 10, 22, 100)
+🔸 &lt;acción&gt;
 
-🔸 <acción>
-
-Debe tener una de las siguientes formas:
+Debe ser una de las siguientes:
 
     activar <dispositivo>
 
@@ -65,7 +67,7 @@ Debe tener una de las siguientes formas:
 
     ajustar <dispositivo> a <número>
 
-### ✅ Ejemplos válidos
+### ✔️ Ejemplos válidos
 
 ```text
 cuando luz es encendido entonces desactivar luz ;
@@ -77,8 +79,19 @@ cuando sensor1 mayor que 25 entonces activar ventilador ;
 cuando aire menor que 18 entonces ajustar calefactor a 22 ;
 ```
 
+### ❌ Ejemplos inválidos
+```text
+cuando 123sensor es encendido entonces activar luz ;      ← El nombre del dispositivo empieza con un número
+```
+```text
+cuando luz igual a encendido entonces desactivar luz ;    ← "igual a" no es una condición válida
+```
+```text
+cuando sensor1 mayor que alto entonces activar aire ;     ← "alto" no es un número válido
+```
+
    
-   ## ⏩ Ejecutar el analizador usando input.txt
+## ⏩ Ejecutar el analizador usando input.txt
 
 1. Editá `input.txt` con la cadena que quieras analizar. Por ejemplo:
 
@@ -97,10 +110,9 @@ cuando aire menor que 18 entonces ajustar calefactor a 22 ;
    3. **Árbol de derivación** en formato de texto.
    4. **Traducción a JavaScript** y su **ejecución**.
 
-> La salida debería ser:
->
+Siguiendo el ejemplo del primero paso, la salida debería ser:
+
 > ```text
-> cuando luz es encendido entonces desactivar luz ;
 >
 > Entrada válida.
 >
@@ -144,12 +156,13 @@ cuando aire menor que 18 entonces ajustar calefactor a 22 ;
    ```bash
    Ingrese una cadena: 
    ```
-4. Ingresá la cedena que quieras analizar y tocá enter. Por ejemplo, si se ingresa la cadena "cuando luz es encendido entonces desactivar luz ;", la salida debería ser:
+4. Ingresá la cedena que quieras analizar y tocá enter.
+  
+   Por ejemplo, si se ingresa la cadena "cuando luz es encendido entonces desactivar luz ;", la salida debería ser:
 
 >
 > ```text
-> cuando luz es encendido entonces desactivar luz ;
->
+> h
 > Entrada válida.
 >
 > Tabla de lexemas y tokens (total 8):

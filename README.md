@@ -162,7 +162,7 @@ Siguiendo el ejemplo del primero paso, la salida debería ser:
 
 >
 > ```text
-> h
+> 
 > Entrada válida.
 >
 > Tabla de lexemas y tokens (total 8):

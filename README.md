@@ -26,7 +26,6 @@ analizador-reglas-domoticas/
 
 * **Node.js** (≥ v16): para ejecutar el intérprete.
 * **Java** (JRE 11 o superior): requerido por ANTLR.
-* **ANTLR4**: descarga el `antlr-4.13.2-complete.jar` desde [sitio oficial](https://www.antlr.org/) o instala el wrapper `antlr4`.
 
 ---
 
@@ -87,7 +86,7 @@ npm install antlr4
    3. **Árbol de derivación** en formato de texto.
    4. **Traducción a JavaScript** y su **ejecución**.
 
-> Ejemplo de salida:
+> La salida debería ser:
 >
 > ```text
 > cuando luz es encendido entonces desactivar luz ;

@@ -24,7 +24,7 @@
 >```
 
 
-  # Ejecutando el analizador
+  # ▶️ Ejecutando el analizador
 
   Este analizador solo toma cadenas con un formato específico:
 
@@ -54,7 +54,7 @@ cuando aire menor que 18 entonces ajustar calefactor a 22 ;
 ```
 
    
-   ## ▶️ Ejecutar el analizador usando input.txt
+   ## ⏩ Ejecutar el analizador usando input.txt
 
 1. Editá `input.txt` con la cadena que quieras analizar. Por ejemplo:
 
@@ -106,7 +106,7 @@ cuando aire menor que 18 entonces ajustar calefactor a 22 ;
 > if (luz.encendido === true) luz.desactivar();text
 > ```
 
-## ▶️ Ejecutar el analizador sin usar input.txt
+## ⏩ Ejecutar el analizador sin usar input.txt
 
 1. Borrá el archivo `input.txt`
 

@@ -1,4 +1,29 @@
-# ▶️ Ejecutar el analizador usando input.txt
+   # 🚀 Requisitos
+
+- Node.js (≥ v16): para ejecutar el intérprete.
+
+- Java (JRE 11 o superior): requerido por ANTLR.
+ 
+- Visual Studio Code con la extensión "ANTLR4 grammar syntax support" configurado de la siguiente manera:
+ 
+  1. En el menú Archivo/Preferencias/Configuración ( CTL + ,) y buscá las preferencias de ANTLR
+   
+  2. Bajá hasta la sección Antlr4:Generation y edita settings.json. 
+   
+  3. Asegurate que la configuración quede así:
+   
+>```text
+>"antlr4.generation": {
+>"alternativeJar": "antlr-4.13.2-complete.jar",
+>"mode": "external",
+>"listeners": true,
+>"visitors": true,
+>"language": "JavaScript",
+>"outputDir": "./generated"
+>}
+>```
+
+   # ▶️ Ejecutar el analizador usando input.txt
 
 1. Editá `input.txt` con la cadena que quieras analizar. Por ejemplo:
 

@@ -1,1 +1,1 @@
-si luz está apagado entonces prender luz;
+cuando luz es encendido entonces desactivar luz

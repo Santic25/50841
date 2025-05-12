@@ -1,5 +1,4 @@
-cuando luz es apagado entonces activar luz;
-
+cuando luz es apagado entonces activar luz ;
 
 
 

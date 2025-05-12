@@ -1,1 +1,1 @@
-cuando luz es entonces activar luz;
+cuando luz es encendido desactivar luz ;

@@ -1,1 +1,1 @@
-cuando termostato mayor que 20 entonces ajustar termostato a 18;
+cuando luz es encendido entonces desactivar luz ;

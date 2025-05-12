@@ -1,4 +1,4 @@
-cuando termostato mayor que 20 entonces ajustar termostato a 18;
+cuando temperatura mayor que 30 entonces ajustar temperatura a 25 ;
 
 
 

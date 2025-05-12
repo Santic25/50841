@@ -1,0 +1,1 @@
+si luz está apagado entonces prender luz;

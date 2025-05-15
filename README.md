@@ -23,6 +23,29 @@
 >}
 >```
 
+# 📥 Clonando el proyecto
+
+Para poder probar el analizador primero hay que clonar el proyecto en tu máquina local. Para eso:
+
+1) Abrir la terminal de windows
+   
+2) escribir el siguiente comando
+
+```bash
+git clone https://github.com/Santic25/50841
+```
+
+3) Esto dará una salida como la siguiente 
+
+![imagen](https://github.com/user-attachments/assets/e52f076e-9e12-4980-a8d6-b1761cebfa16)
+
+4) Abrir Visual Studio Code y abrir el proyecto
+
+![imagen](https://github.com/user-attachments/assets/eb3ee620-4f71-4634-9bd0-014493c38d19)
+
+![imagen](https://github.com/user-attachments/assets/4b88c213-c1d6-4067-8867-5547eb5c89fa)
+
+
 
 # ▶️ Ejecutando el analizador
 
@@ -92,6 +115,8 @@ cuando sensor1 mayor que alto entonces activar aire ;     ← "alto" no es un n�
 
    
 ## ⏩ Ejecutar el analizador usando input.txt
+
+El analizador ya viene con el archivo input.txt
 
 1. Editá `input.txt` con la cadena que quieras analizar. Por ejemplo:
 

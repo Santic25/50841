@@ -127,7 +127,7 @@ El analizador ya viene con el archivo input.txt. Podés ingresar la cadena que q
 ![imagen](https://github.com/user-attachments/assets/b7263d86-9395-4e1e-9cd0-37000e3fef05)
 
    
-2. Abrí una terminal en y ejecutá:
+2. Abrí una terminal y ejecutá:
 
    ```bash
    npm start
@@ -148,7 +148,10 @@ El analizador ya viene con el archivo input.txt. Podés ingresar la cadena que q
 Siguiendo el ejemplo del primero paso, la salida debería ser:
 
 > ```text
->
+> 
+> > antlr-calculator-project@1.0.0 start
+> > node index.js
+> 
 > Entrada válida.
 >
 > Tabla de lexemas y tokens (total 8):
@@ -179,18 +182,20 @@ Siguiendo el ejemplo del primero paso, la salida debería ser:
 
 ## ⏩ Ejecutar el analizador sin usar input.txt
 
- 
-
 1. Borrá el archivo `input.txt`
 
 2. Ejecutá:
 
    ```bash
-   node index.js
+   npm start
    ```
 3. En consola va a salir:
 
    ```bash
+   
+   > antlr-calculator-project@1.0.0 start
+   > node index.js
+
    Ingrese una cadena: 
    ```
 4. Ingresá la cedena que quieras analizar y tocá enter.

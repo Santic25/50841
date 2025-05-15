@@ -116,19 +116,29 @@ cuando sensor1 mayor que alto entonces activar aire ;     ← "alto" no es un n�
    
 ## ⏩ Ejecutar el analizador usando input.txt
 
-El analizador ya viene con el archivo input.txt
+El analizador ya viene con el archivo input.txt. Podés ingresar la cadena que quieras (siempre que cumpla con el formato explicado arriba), hay algunos ejemplos de inputs válidos e inválidos en la carpeta del proyecto.
 
 1. Editá `input.txt` con la cadena que quieras analizar. Por ejemplo:
 
    ```text
    cuando luz es encendido entonces desactivar luz ;
    ```
-2. Ejecutá:
+
+![imagen](https://github.com/user-attachments/assets/b7263d86-9395-4e1e-9cd0-37000e3fef05)
+
+   
+2. Abrí una terminal en y ejecutá:
 
    ```bash
-   node index.js
+   npm start
    ```
-3. En consola va a salir:
+
+   ![imagen](https://github.com/user-attachments/assets/8d6f9449-fa64-4e3f-bf9f-6a4b18b1dbe4)
+
+   ![imagen](https://github.com/user-attachments/assets/892c9061-5714-4645-b4de-1f95cf9dad9e)
+  
+   
+4. En consola va a salir:
 
    1. **Entrada válida** o mensaje de **error sintáctico** (línea y causa).
    2. **Tabla de lexemas y tokens** reconocidos.
@@ -168,6 +178,8 @@ Siguiendo el ejemplo del primero paso, la salida debería ser:
 > ```
 
 ## ⏩ Ejecutar el analizador sin usar input.txt
+
+ 
 
 1. Borrá el archivo `input.txt`
 

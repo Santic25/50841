@@ -233,7 +233,7 @@ Siguiendo el ejemplo del primero paso, la salida debería ser:
 > if (luz.encendido === true) luz.desactivar();text
 > ```
  
-❗Si te sale el siguiente error:
+# ❗Si te sale el siguiente error:
 
 ![imagen](https://github.com/user-attachments/assets/068f2b8f-8e4c-4c0d-88e2-4eb42b3495e5)
 

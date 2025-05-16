@@ -192,7 +192,7 @@ Siguiendo el ejemplo del primero paso, la salida debería ser:
    ```bash
    npm start
    ```
-3. En consola va a salir:
+En consola va a salir:
 
    ```bash
    
@@ -201,7 +201,7 @@ Siguiendo el ejemplo del primero paso, la salida debería ser:
 
    Ingrese una cadena: 
    ```
-4. Ingresá la cedena que quieras analizar y tocá enter.
+3. Ingresá la cedena que quieras analizar y tocá enter.
   
    Por ejemplo, si se ingresa la cadena "cuando luz es encendido entonces desactivar luz ;", la salida debería ser:
 

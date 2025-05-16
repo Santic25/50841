@@ -45,6 +45,9 @@ git clone https://github.com/Santic25/50841
 
 ![imagen](https://github.com/user-attachments/assets/4b88c213-c1d6-4067-8867-5547eb5c89fa)
 
+Al abrir el pryecto te va a preguntar si confías en el autor. Presioná en que si confías en el autor.
+
+![imagen](https://github.com/user-attachments/assets/212ed9c3-2905-4559-8fc0-3e79ee8836cb)
 
 
 # ▶️ Ejecutando el analizador

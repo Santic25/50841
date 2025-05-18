@@ -249,4 +249,3 @@ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 Es probable que te pida que confirmes si es seguro, escribí Y o presioná enter. Después de esto cerrá y volvé a abrir visual studio code (Si ya lo tenías abierto).
 
 Este comando permite la ejecución de scripts que descargues si están firmados, y todos los scripts que crees localmente. Es seguro para el desarrollo habitual.
-Después de ejecutarlo 
